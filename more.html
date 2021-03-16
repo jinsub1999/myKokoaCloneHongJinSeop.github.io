@@ -9,7 +9,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoatalk</title>
+    <title>More - Kokoatalk</title>
   </head>
   <body>
     <div class="status-bar">
@@ -18,7 +18,7 @@
         <i class="fas fa-wifi"></i>
       </div>
       <div class="status-bar__column">
-        <span>18:43</span>
+        <span>22:43</span>
       </div>
       <div class="status-bar__column">
         <span> 110% </span>
@@ -28,21 +28,17 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">More</h1>
 
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
-        <span><i class="fas fa-cog fa-lg"></i></span>
+        <span>
+          <a href="./settings.html"><i class="fas fa-cog fa-lg"></i></a>
+        </span>
       </div>
     </header>
-    <main class="friends-screen">
-      <a id="friends-display-link">
-        <i class="fas fa-info-circle"></i>
-        Friends' Names Display
-        <i class="fas fa-chevron-right fa-xs"></i>
-      </a>
-
+    <main class="main-screen more-screen">
       <div class="user-component">
         <div class="user-component__column">
           <img
@@ -51,36 +47,57 @@
           />
           <div class="user-component__text">
             <h4 class="user-component__title">Hong</h4>
-            <!-- <h6 class="user-component__subtitle">Time flies..</h6> -->
+            <h6 class="user-component__subtitle">
+              010-1234-1234<i
+                class="fas fa-exclamation-circle"
+                style="margin-left: 5px"
+              ></i>
+            </h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
+        <div class="user-component__column">
+          <i class="far fa-comment-alt fa-2x"></i>
+        </div>
+      </div>
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="far fa-calendar"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-smile-beam"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-paint-brush"></i>
+          <span>Themes</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-money-check-alt"></i>
+          <span>Account</span>
+        </div>
       </div>
 
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span> Channel</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
-        </div>
-
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--sm">
-                Hong2
-              </h4>
-              <h6 class="user-component__subtitle user-component__subtitle--sm">
-                Time flies..
-              </h6>
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
             </div>
+            <span class="more-suggestions__icon-text">Kokoa Story</span>
           </div>
-          <div class="user-component__column">
-            <span> 2 </span>
-            <i class="fas fa-chevron-right fa-xs"></i>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <span class="more-suggestions__icon-text">Kokoa Story</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <span class="more-suggestions__icon-text">Kokoa Story</span>
           </div>
         </div>
       </div>
@@ -95,13 +112,13 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="./chats.html">
-            <span class="nav__notification">1</span>
+            <span class="nav__notification badge">1</span>
             <i class="far fa-comments fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="./find.html"
-            ><i class="fas fa-search fa-2x"></i>
+          <a class="nav__link" href="./find.html">
+            <i class="fas fa-search fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
